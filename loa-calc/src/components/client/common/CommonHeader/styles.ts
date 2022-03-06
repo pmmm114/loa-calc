@@ -1,7 +1,4 @@
-import { css, keyframes } from "@emotion/react";
-import styled from "@emotion/styled";
-
-export const CommonLayout = styled.div``;
+import styled from "styled-components";
 
 export const CommonLayoutHeader = styled.header`
   h1 {
@@ -10,5 +7,6 @@ export const CommonLayoutHeader = styled.header`
 `;
 
 export const CommonLayoutNav = styled.nav``;
+export const HeaderMenuListItem = styled.li``;
 
 export const CommonLayoutNavWrap = styled.div``;
