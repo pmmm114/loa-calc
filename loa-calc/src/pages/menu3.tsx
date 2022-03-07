@@ -3,7 +3,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
 import styles from "@src/styles/Home.module.css";
 
-const Engrave: NextPage = () => {
+const Menu3: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -13,7 +13,7 @@ const Engrave: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <div>engrave</div>
+        <div>menu3</div>
       </main>
     </div>
   );
@@ -33,4 +33,4 @@ export async function getStaticProps(context: GetStaticPropsContext) {
   };
 }
 
-export default Engrave;
+export default Menu3;

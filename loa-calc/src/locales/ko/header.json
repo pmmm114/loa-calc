@@ -1,9 +1,9 @@
 {
-  "header_menu": [
-    { "title": "홈" },
-    { "title": "각인계산" },
-    { "title": "트포" },
-    { "title": "더보기 손익" },
-    { "title": "경매 손익" }
-  ]
+  "header_menu": {
+    "home": "홈",
+    "engrave": "각인계산",
+    "menu2": "트포",
+    "menu3": "더보기 손익",
+    "menu4": "경매 손익"
+  }
 }
