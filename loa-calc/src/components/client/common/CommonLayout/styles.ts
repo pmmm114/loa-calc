@@ -1,4 +1,5 @@
-import { css, keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
 
-export const CommonLayout = styled.div``;
+export const CommonLayout = styled.div`
+  background-color: rgb(32, 33, 36);
+`;
