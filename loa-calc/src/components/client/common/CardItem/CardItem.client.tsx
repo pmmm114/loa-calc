@@ -1,13 +1,11 @@
 import React from "react";
 import * as ES from "./styles";
 
-const CardItem = () => {
-  console.log("CardItem");
-
+const CardItem = ({ children, ...rest }: any) => {
   return (
-    <>
-      <div>CardItem</div>
-    </>
+    <ES.CardItem>
+      <div>cardItem</div>
+    </ES.CardItem>
   );
 };
 

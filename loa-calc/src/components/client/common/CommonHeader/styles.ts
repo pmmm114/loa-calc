@@ -1,6 +1,8 @@
 import styled from "@emotion/styled";
 
 export const CommonLayoutHeader = styled.header`
+  position: sticky;
+  top: 0;
   display: flex;
   height: 60px;
   font-size: 1.6rem;
