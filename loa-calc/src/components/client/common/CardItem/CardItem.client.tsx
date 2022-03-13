@@ -1,5 +1,4 @@
 import React from "react";
-import * as ES from "./styles";
 
 const CardItem = () => {
   console.log("CardItem");

@@ -1,8 +1,7 @@
 import React from "react";
-import { IindexPageGlobalProps } from "@src/types/global";
 import * as ES from "./styles";
 
-const CommonFooter = ({ locales }: IindexPageGlobalProps) => {
+const CommonFooter = () => {
   return (
     <>
       <ES.CommonFooter className="footer">

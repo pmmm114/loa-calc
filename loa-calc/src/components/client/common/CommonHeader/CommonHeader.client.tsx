@@ -4,10 +4,6 @@ import Link from "next/link";
 
 import * as ES from "./styles";
 
-interface IHeaderMenu {
-  title: string;
-}
-
 const headerMenuRouter = [
   {
     router: "/",

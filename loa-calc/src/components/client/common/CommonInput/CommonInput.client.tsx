@@ -9,14 +9,14 @@ export interface ICommonInputProps
   valueFormatter?: (value: string | number) => string | number;
 }
 
-function Input({
+const Input = ({
   ref,
   inputType,
   valueFormatter = (value) => {
     return value;
   },
   ...rest
-}: ICommonInputProps) {
+}: ICommonInputProps) => {
   const { useInputValue, useInputOnChange } = useInputs("", inputType);
   useImperativeHandle(
     ref,
@@ -25,6 +25,7 @@ function Input({
     }),
     [useInputValue]
   );
+
   return (
     <>
       <ES.CommonInput
@@ -34,12 +35,13 @@ function Input({
       />
     </>
   );
-}
+};
 
-// for display-name warning
-export default React.forwardRef<HTMLInputElement, ICommonInputProps>(
+const CommonInput = React.forwardRef<HTMLInputElement, ICommonInputProps>(
   (props: ICommonInputProps, ref) => {
     const _Input = Input({ ...props, ref });
     return _Input;
   }
 );
+CommonInput.displayName = "CommonInput";
+export default CommonInput;

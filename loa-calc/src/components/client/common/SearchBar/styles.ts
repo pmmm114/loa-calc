@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import CommonInput from "@src/components/client/common/CommonInput";
 
-export const SearchBar = styled(CommonInput)`
+export const SearchBar = styled(CommonInput)<any>`
   width: 50%;
   height: 48px;
   background-color: #333;
@@ -11,5 +11,5 @@ export const SearchBar = styled(CommonInput)`
   font-size: 1.6rem;
   padding: 0 54px 0 24px;
   outline: none;
-  color: ${(props) => props.theme.fontGray};
+  color: ${({ theme }) => theme.fontGray};
 `;

@@ -8,12 +8,11 @@ import CommonFooter from "@src/components/client/common/CommonFooter";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  console.log("_app: ", pageProps);
   return (
     <CommonLayout>
       <CommonHeader />
       <Component {...pageProps} />
-      <CommonFooter locales={pageProps.locale} />
+      <CommonFooter />
     </CommonLayout>
   );
 }

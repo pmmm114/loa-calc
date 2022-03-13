@@ -6,7 +6,7 @@ import SearchBarContainer from "@src/components/client/Home/SearchBarContainer";
 import LogoContainer from "@src/components/client/Home/LogoContainer";
 import PostContainer from "@src/components/client/Home/PostContainer";
 
-const Home: NextPage = (props) => {
+const Home: NextPage = () => {
   return (
     <>
       <Head>
