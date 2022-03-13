@@ -5,7 +5,7 @@ import * as ES from "./styles";
 //   children: React.ReactNode;
 // }
 
-const PostContainer = ({ children, ...rest }: any) => {
+const PostContainer = () => {
   return <ES.PostContainer>PostContainer</ES.PostContainer>;
 };
 

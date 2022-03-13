@@ -5,7 +5,7 @@ import * as ES from "./styles";
 //   children: React.ReactNode;
 // }
 
-const LogoContainer = ({ children, ...rest }: any) => {
+const LogoContainer = () => {
   return (
     <ES.LogoCotainer>
       <ES.Logo>Logo</ES.Logo>

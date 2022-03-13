@@ -6,7 +6,7 @@ import * as ES from "./styles";
 //   children: React.ReactNode;
 // }
 
-const SearchBarContainer = ({ children, ...rest }: any) => {
+const SearchBarContainer = () => {
   return (
     <ES.SearchBarContainer>
       <SearchBar />

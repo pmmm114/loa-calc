@@ -6,7 +6,7 @@ interface IPageHome {
 }
 
 const PageHome = ({ children, ...rest }: IPageHome) => {
-  return <ES.HomePage>{children}</ES.HomePage>;
+  return <ES.HomePage {...rest}>{children}</ES.HomePage>;
 };
 
 export default PageHome;
