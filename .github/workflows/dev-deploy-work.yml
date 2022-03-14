@@ -35,6 +35,7 @@ jobs:
       ### Code Deploy 추가부분 ###
       - name: Code Deploy
         env:
+          AWS_EC2_METADATA_DISABLED: true
           S3_DEV_BUCKET_NAME: ${{ secrets.S3_DEV_BUCKET_NAME }}
           DEV_BUILD_FILE_NAME: ${{ secrets.DEV_BUILD_FILE_NAME }}
         run: aws deploy create-deployment --application-name 	dev-joaloa-deploy --deployment-config-name CodeDeployDefault.AllAtOnce --deployment-group-name dev --s3-location bucket=$S3_DEV_BUCKET_NAME,bundleType=zip,key=$DEV_BUILD_FILE_NAME.zip
