@@ -32,3 +32,9 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
+      ### Code Deploy 추가부분 ###
+      - name: Code Deploy
+        env:
+          S3_DEV_BUCKET_NAME: ${{ secrets.S3_DEV_BUCKET_NAME }}
+          DEV_BUILD_FILE_NAME: ${{ secrets.DEV_BUILD_FILE_NAME }}
+        run: aws deploy create-deployment --application-name 	dev-joaloa-deploy --deployment-config-name CodeDeployDefault.AllAtOnce --deployment-group-name dev --s3-location bucket=$S3_DEV_BUCKET_NAME,bundleType=zip,key=$DEV_BUILD_FILE_NAME.zip
