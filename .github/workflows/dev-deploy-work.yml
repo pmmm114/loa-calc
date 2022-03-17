@@ -28,7 +28,7 @@ jobs:
         run: yarn build
 
       - name: Zip artifacts
-        run: zip -r ./dev-build.zip .
+        run: zip -r --symlinks ./dev-build.zip .
 
       - name: S3 Deploy
         run: aws s3 cp ./dev-build.zip s3://dev-loacalc/dev-build.zip --acl bucket-owner-full-control # s3 이름 2021-cvi-dev
