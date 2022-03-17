@@ -5,7 +5,7 @@ const CardItem = () => {
 
   return (
     <>
-      <div>CardItem 테스트7</div>
+      <div>CardItem 테스트8</div>
     </>
   );
 };
