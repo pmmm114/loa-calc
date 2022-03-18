@@ -5,6 +5,10 @@ on:
     branches: dev # 적용될 브랜치
     paths:
       - "loa-calc/**" # workflow에서 적용될 path
+  pull_request: # 적용될 액션
+    branches: dev # 적용될 브랜치
+    paths:
+      - "loa-calc/**" # workflow에서 적용될 path
 
 defaults:
   run:
